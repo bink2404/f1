@@ -1,0 +1,11 @@
+<table border="0" width="65%" height="1" cellpadding="4" cellspacing=0 align=center>
+    <tr>
+      <td width="50%" height="1" bgcolor="#FFFFFF" align=right vspace=0><font color="#000000" size=2><A HREF="help.html" target="_blank">Help</A></font></td>
+	  <td width="50%" height="1" bgcolor="#FFFFFF" align=left vspace=0><font color="#000000" size=2><A HREF="mailto:support@fantasysportnet.com">Contact</A></font></td>
+    </tr>
+</table>
+
+<img border=0 width=528 height=11 src="images/line.gif">
+
+<br><font size=1.75>Copyright &copy; 2009 fantasysportnet. All
+rights reserved.</font>

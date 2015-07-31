@@ -1,0 +1,18 @@
+
+
+	2005/06
+	~~~~~~~
+	
+	- the owner of a group should be able to remove teams
+	- ability to rename teams
+	- ability of teams to join up to 5 groups
+	- display all stats
+	- automate password reminders
+	- restrict posting messages to groups you are a member of
+
+	- change scoring ...
+
+		assist 5 pts
+		shot 2 pt
+		SOT 3 pts
+

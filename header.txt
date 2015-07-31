@@ -1,0 +1,78 @@
+<center>
+
+<%
+	String iUserId = String.valueOf(session.getValue("sessionId")) ;
+
+	String pageUrl = request.getRequestURI() ;
+	int last = request.getRequestURI().lastIndexOf("/") ;
+	String pageName = pageUrl.substring(last+1) ;
+
+//	out.println(iUserId) ;
+
+	if ((iUserId != null) && (!iUserId.equals("")) && (!iUserId.equals("null")) && (!iUserId.equals("0")))
+	{
+		out.println("<table border=\"0\" width=\"100%\" height=\"0\" cellpadding=\"0\">") ;
+			out.println("<tr>") ;
+			out.println("<td") ;
+			out.println("<width=\"75%\" height=\"0\" bgcolor=\"#FFFFFF\" align=left>") ;
+			
+			if (pageName.equals("login.jsp"))
+			{
+				out.println("<b>Home</b>") ;
+			}
+			else
+			{
+				out.println("<A HREF=\"login.jsp?log=x&id=" + session.getValue("sessionId") + "\">Home</A>") ;
+			}
+
+			out.println("<td width=\"25%\" height=\"0\" bgcolor=\"#FFFFFF\" align=right><font color=\"#000000\">") ;
+			
+			if (pageName.equals("changeInfo.jsp"))
+			{
+				out.println("<b>Change user info</b>") ;
+			}
+			else
+			{
+				out.println("<a href=\"changeInfo.jsp?id=" + iUserId + "\">Change user info</a>") ;
+			}
+				
+			out.println("&nbsp;<A HREF=\"login.jsp\">Sign Out</A></font></td>") ;
+			out.println("</tr>") ;
+		out.println("</table>") ;
+	}
+	else
+	{
+		out.println("<table border=\"0\" width=\"100%\" height=\"0\" cellpadding=\"0\">") ;
+			out.println("<tr>") ;
+			out.println("<td") ;
+			out.println("<width=\"50%\" height=\"0\" bgcolor=\"#FFFFFF\" align=left>") ;
+			
+			if (pageName.equals("login.jsp"))
+			{
+				out.println("<b>Sign In</b>") ;
+			}
+			else
+			{
+				out.println("<A HREF=\"login.jsp\">Sign In</a>") ;
+			}
+
+			out.println("</td>") ;
+			out.println("<td width=\"50%\" height=\"1\" align=right>") ;
+			
+			if (pageName.equals("signup.jsp"))
+			{
+				out.println("<b>Sign Up</b>") ;
+			}
+			else
+			{
+				out.println("<A HREF=\"signup.jsp\">Sign Up</A>") ;
+			}
+			out.println("</td>") ;
+			out.println("</tr>") ;
+		out.println("</table>") ;
+	}
+%>
+
+<hr size = 1 width=100% align="left" color="darkblue">
+<a href="login.jsp?log=x&id=1"><img src="images/title2.jpg" alt="http://www.fantasysportnet.com" width="387" height="75" border="0"></a>
+<a href="login.jsp?log=x&id=1"><img src="images/f12.gif" alt="fantasysportnet" width="100" height="75" border="0"></a>
